@@ -2,7 +2,7 @@ import React from 'react';
 
 const Body = () => {
   return (
-    <div>
+    <div className='body-container'>
       <div className='info-container'>
         <h1>About</h1>
         <p>
@@ -11,7 +11,7 @@ const Body = () => {
           best practices, and am always looking for new things to learn.</p>
       </div>
       <div className='info-container'>
-        <h1>About</h1>
+        <h1>Interests</h1>
         <p>
           Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
           Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
