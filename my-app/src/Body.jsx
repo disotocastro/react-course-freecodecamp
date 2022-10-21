@@ -2,10 +2,10 @@ import React from 'react';
 
 const Body = () => {
   return (
-    <div>
+    <div className='main-container'>
       <h1>My awesome website in React</h1>
       <h3>Reasons I Love React</h3>
-      <ul>
+      <ul className='list-container'>
         <li>It's composable</li>
         <li>It's declarative</li>
         <li>It's a hireable skill</li>

@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.footer-container{
+  margin-left: 20px;
+}
+
+.list-container {
+  list-style: decimal;
+}
+
+.main-container{
+  margin-left: 20px;
+}
