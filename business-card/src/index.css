@@ -45,6 +45,7 @@ code {
 }
 .title h2{
   margin-top: 15px;
+  font-size: 30px;
 }
 .title h5{
   color:#F3BF99;
@@ -62,7 +63,7 @@ code {
   display: flex;  
   align-items: center;
   justify-content: space-between;
-  width: 240px;
+  width: 250px;
   margin-top: 10px;
 }
 
@@ -97,3 +98,18 @@ code {
   padding-right: 10px;
 }
 
+footer{
+  background-color: #161619  ;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}

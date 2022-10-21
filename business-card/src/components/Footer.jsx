@@ -8,10 +8,12 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <img src={Twitter} alt="" />
-        <img src={Facebook} alt="" />
-        <img src={Instagram} alt="" />
-        <img src={GitHub} alt="" />
+        <div className="img-container">
+          <img src={Twitter} alt="" />
+          <img src={Facebook} alt="" />
+          <img src={Instagram} alt="" />
+          <img src={GitHub} alt="" />
+        </div>
       </footer>
     </div>
   );
