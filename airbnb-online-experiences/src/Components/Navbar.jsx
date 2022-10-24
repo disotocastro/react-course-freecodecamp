@@ -19,7 +19,6 @@ const Navbar = () => {
             one-of-a-kind hosts—all without leaving home.
           </p>
         </div>
-
       </nav>
     </div>
   );
