@@ -1,25 +1,24 @@
 import React from 'react';
 import star from '../Assets/star.svg'
-import image from '../Assets/image.png'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
       <div className="card">
 
-        <img className='image' src={image} alt="" />
+        <img className='image' src={props.img} alt="" />
 
         <div className="rating">
           <img src={star} alt="" />
-          <span >5.0</span>
+          <span >{props.rating}</span>
           <span className='gray'>(6)</span>
-          <span className='gray'>• USA</span>
+          <span className='gray'>• {props.country}</span>
         </div>
 
-        <p className='title'>Life lessons with Katie Zaferes</p>
+        <p className='title'>{props.title}</p>
         <p>
           <span className='bold'>
-            From $140
+            From {props.price}$
           </span>
           / person
         </p>
