@@ -6,13 +6,13 @@ const Card = (props) => {
     <div>
       <div className="card">
 
-        <img className='image' src={props.img} alt="" />
+        <img className='image' src={require('../images/') + props.img} alt="" />
 
         <div className="rating">
           <img src={star} alt="" />
           <span >{props.rating}</span>
           <span className='gray'>(6)</span>
-          <span className='gray'>• {props.country}</span>
+          <span className='gray'>• {props.location}</span>
         </div>
 
         <p className='title'>{props.title}</p>
