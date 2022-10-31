@@ -21,20 +21,20 @@ const Card = (props) => {
             {badgeText}
           </div>
         }
-        <img className='image' src={require(`../Assets/${props.img}`)} alt="" />
+        <img className='image' src={require(`../Assets/${props.item.coverImg}`)} alt="" />
 
         <div className="rating">
-          <img src={star} alt="" />
-          <span >{props.rating}</span>
+          <img src={props.item.star} alt="" />
+          <span >{props.item.rating}</span>
           <span className='gray'>(6)</span>
-          <span className='gray'>• {props.location}</span>
+          <span className='gray'>• {props.item.location}</span>
         </div>
 
-        <p className='title'>{props.title}</p>
+        <p className='title'>{props.item.title}</p>
 
         <p>
           <span className='bold'>
-            From {props.price}$
+            From {props.item.price}$
           </span>
           / person
         </p>
@@ -44,3 +44,12 @@ const Card = (props) => {
 };
 
 export default Card;
+
+
+// img={item.coverImg}
+// rating={item.stats.rating}
+// reviewCount={item.reviewCount}
+// location={item.location}
+// title={item.title}
+// price={item.price}
+// openSpots={item.openSpots}
