@@ -12,6 +12,7 @@ const dataElements = data.map(item => {
     <Card
       key={item.id}
       item={item}
+    // {...item} otra forma de llamarlo
     />
   )
 })

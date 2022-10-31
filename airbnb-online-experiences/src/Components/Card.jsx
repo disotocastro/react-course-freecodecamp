@@ -4,9 +4,9 @@ import star from '../Assets/star.svg'
 const Card = (props) => {
 
   let badgeText
-  if (props.openSpots === 0) {
+  if (props.item.openSpots === 0) {
     badgeText = 'SOLD OUT'
-  } else if (props.location === "Online") {
+  } else if (props.item.location === "Online") {
     badgeText = 'OPEN SPOT'
   }
 
@@ -24,9 +24,9 @@ const Card = (props) => {
         <img className='image' src={require(`../Assets/${props.item.coverImg}`)} alt="" />
 
         <div className="rating">
-          <img src={props.item.star} alt="" />
-          <span >{props.item.rating}</span>
-          <span className='gray'>(6)</span>
+          <img src={star} alt="" />
+          <span >{props.item.stats.rating}</span>
+          <span className='gray'>({props.item.stats.reviewCount})</span>
           <span className='gray'>• {props.item.location}</span>
         </div>
 
