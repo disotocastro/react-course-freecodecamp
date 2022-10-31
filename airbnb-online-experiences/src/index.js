@@ -9,18 +9,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const dataElements = data.map(item => {
   return <Card
+    key={item.id}
     img={item.coverImg}
     rating={item.stats.rating}
     reviewCount={item.reviewCount}
     location={item.location}
     title={item.title}
     price={item.price}
+    openSpots={item.openSpots}
   />
 })
 
 root.render(
   <React.StrictMode>
     <Navbar />
-    {dataElements}
+    <section className='cards-list'>
+      {dataElements}
+    </section>
   </React.StrictMode>
 );  

@@ -65,10 +65,25 @@ code {
   font-weight: bold;
 }
 
+
+.cards-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 0;
+}
+
+
 .card {
   width: 175px;
   font-size: 12px;
   margin-top: 50px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
 }
 
 .image {
@@ -84,4 +99,14 @@ code {
   display: flex;
   align-items: center;
   gap: 4px
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
