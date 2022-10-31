@@ -6,7 +6,7 @@ const Card = (props) => {
     <div>
       <div className="card">
 
-        <img className='image' src={require('../images/') + props.img} alt="" />
+        <img className='image' src={require(`../Assets/${props.img}`)} alt="" />
 
         <div className="rating">
           <img src={star} alt="" />

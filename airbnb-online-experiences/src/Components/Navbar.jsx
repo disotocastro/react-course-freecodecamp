@@ -10,7 +10,7 @@ const Navbar = () => {
           <img className='logo' src={logo} alt="Airbnb logo" />
         </div>
         <div className="online-experiences-container">
-          <img src={experiences} alt="" />
+          <img className='experiences' src={experiences} alt="" />
         </div>
         <div className="text-container">
           <h1>Online Experiences</h1>
