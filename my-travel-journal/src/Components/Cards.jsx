@@ -10,12 +10,12 @@ const Cards = (props) => {
 
         <div className="card-location">
           <img className='location-img' src={location} alt="" />
-          <h3 className="card--location">{props.item.location}</h3>
+          <p className="card--location">{props.item.location}</p>
           <a className='card--link' href={props.item.googleMapsUrl} target="_blank" rel="noopener noreferrer">View on Google Maps</a>
         </div>
 
         <h1 className='card--name'>{props.item.title}</h1>
-        <h4 className='card--date'>{props.item.startDate}</h4>
+        <h5 className='card--date'>{props.item.startDate} - {props.item.endDate} </h5>
 
         <p className='card--description'>
           {props.item.description}

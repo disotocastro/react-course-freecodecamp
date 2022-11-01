@@ -17,6 +17,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    {dataElements}
+    <section className='places'>
+      {dataElements}
+    </section>
   </React.StrictMode>
 );
