@@ -4,10 +4,10 @@ const Inputs = () => {
   return (
     <div className='form-container'>
       <form className='form' action="">
-        <input className='input' type="text" id="fname" name="fname" placeholder='Up Text' />
-        <input className='input' type="text" id="lname" name="lname" placeholder='Down Text' />
+        <input className='form__input' type="text" placeholder='Top text' />
+        <input className='form__input' type="text" placeholder='Bottom Text' />
       </form>
-      <button className='btn-getImg'>Get a new meme image</button>
+      <button className='form__btn'>Get a new meme image</button>
     </div>
   );
 };
