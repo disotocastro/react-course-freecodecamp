@@ -71,3 +71,8 @@ code {
   border: none;
   cursor: pointer;
 }
+
+.meme__image {
+  width: 400px;
+  height: 400px;
+}
