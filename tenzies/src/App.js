@@ -1,5 +1,23 @@
 import React from 'react';
 import Die from './Die'
+
+
+
+
+function allNewDice() {
+  let arrayDice = []
+  for (let i = 0; i < 10; i++) {
+    arrayDice[i] = Math.floor(Math.random() * 6) + 1;
+
+  }
+  console.log(arrayDice);
+}
+
+
+allNewDice()
+
+
+
 const App = () => {
   return (
     <div>
