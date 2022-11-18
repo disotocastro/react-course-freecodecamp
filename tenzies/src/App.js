@@ -9,6 +9,9 @@ const App = () => {
 
   const diceElements = dice.map(die => <Die value={die} />)
 
+  function rollDice() {
+    setDice(allNewDice())
+  }
 
 
   function allNewDice() {
@@ -28,6 +31,9 @@ const App = () => {
         <div className="tenzies--background">
           <div className="die--container">
             {diceElements}
+          </div>
+          <div onClick={rollDice} className="tenzies--roll-btn">
+            Roll
           </div>
         </div>
       </main>
