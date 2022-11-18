@@ -89,3 +89,7 @@ code {
 .tenzies--roll-btn:hover {
   opacity: 90%;
 }
+
+.held {
+  background-color: #4ee088;
+}

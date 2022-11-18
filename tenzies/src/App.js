@@ -19,14 +19,14 @@ const App = () => {
     for (let i = 0; i < 10; i++) {
       arrayDice.push({
         value: (Math.floor(Math.random() * 6) + 1),
-        isHeld: false,
+        isHeld: true,
         id: nanoid()
       });
 
     }
     return arrayDice
   }
-  const diceElements = dice.map(die => <Die key={die.id} value={die.value} />)
+  const diceElements = dice.map(die => <Die key={die.id} value={die.value} isHeld={die.isHeld} />)
 
 
   return (
