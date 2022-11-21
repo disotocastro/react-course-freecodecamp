@@ -42,6 +42,20 @@ const App = () => {
         die
     }))
   }
+
+  const [tenzies, setTenzies] = React.useState(false)
+
+
+  React.useEffect(() => {
+    console.log("Dice state changed")
+  }, [dice])
+
+
+
+
+
+
+
   return (
     <div>
       <main className="tenzies--background-container">
