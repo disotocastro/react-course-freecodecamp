@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Die from './Die'
 import { nanoid } from 'nanoid'
+import Confetti from 'react-confetti'
+
 
 
 
@@ -58,12 +60,6 @@ const App = () => {
 
   }, [dice])
 
-
-
-
-
-
-
   return (
     <div>
       <main className="tenzies--background-container">
@@ -74,8 +70,16 @@ const App = () => {
             {diceElements}
           </div>
           <div onClick={rollDice} className="tenzies--roll-btn">
-            Roll
+            {tenzies ? "New game" : "Roll"}
           </div>
+          {tenzies ?
+            <Confetti
+              width={window.innerWidth - 10}
+              height={window.innerHeight}
+            />
+            : ""
+          }
+
         </div>
       </main>
     </div>
