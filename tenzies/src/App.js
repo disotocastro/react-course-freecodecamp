@@ -53,7 +53,7 @@ const App = () => {
 
     if (allHeld && allSameNumber) {
       setTenzies(true);
-      console.log('hola');
+      console.log('You won!');
     }
 
   }, [dice])
