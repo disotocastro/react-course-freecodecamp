@@ -1,0 +1,3 @@
+Track the number of rolls
+Track the time it took to win
+Sace the best time to localStorage
